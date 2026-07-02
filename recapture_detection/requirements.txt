@@ -7,3 +7,4 @@ scikit-image>=0.18.0
 PyWavelets>=1.1.1
 matplotlib>=3.4.0
 joblib>=1.1.0
+gunicorn
