@@ -7,10 +7,10 @@ def predict(image_path):
     features = extract_all_features(image_path).reshape(1, -1)
     features_scaled = scaler.transform(features)
     
-    # Get the exact probability of it being a FAKE (1 = screen)
+   
     score = model.predict_proba(features_scaled)[0, 1]
     
-    # Print ONLY the score as requested by the assignment
+    
     print(f"-> {score:.4f}")
 
 if __name__ == "__main__":
